@@ -2,7 +2,6 @@
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri = explode('/', $uri);
 $requestMethod = $_SERVER["REQUEST_METHOD"];
-var_dump($uri);
 if($uri[2]!=null){
     $report="Ok";
     if($uri[2]=="add")
